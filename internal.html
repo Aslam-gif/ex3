@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Process - Internal CSS</title>
+    
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #f0fff0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #006400;
+            text-align: left;
+            border-bottom: 3px solid #006400;
+            padding-bottom: 10px;
+        }
+
+        .step {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #3cb371;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .step h2 {
+            color: #2e8b57;
+            margin-top: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #3cb371;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2e8b57;
+        }
+        
+        /* Nav Bar Style */
+        nav { background-color: #006400; padding: 10px 0; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #ffebcd; }
+    </style>
+    </head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home (External CSS)</a>
+        <a href="internal.html">Adoption Process (Internal CSS)</a>
+        <a href="inline.html">Whiskers Profile (Inline CSS)</a>
+    </nav>
+    <h1 id="process-start">Our Simple Cat Adoption Process</h1>
+
+    <div class="step">
+        <h2>Step 1: Browse Cats</h2>
+        <p>View all our adoptable feline friends online and see who captures your heart!</p>
+    </div>
+
+    <div class="step">
+        <h2>Step 2: Submit Application</h2>
+        <p>Fill out our short application form so we can learn more about you and your home environment.</p>
+    </div>
+
+    <a href="inline.html" class="cta-button">Check Out Whiskers!</a>
+
+</body>
+</html>
