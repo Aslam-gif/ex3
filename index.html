@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CSS Types</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            .internal{
-                color:blue;
-            }
-            </style>
-    </head>
-    <body>
-        <h1 style="color:red";>Inline CSS</h1>
-        <p class="internal">Internal CSS</p>
-        <div class="external">External CSS</div>
-        </body>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cat's Meow Shelter Home</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style> 
+        nav { background-color: #333; padding: 10px 0; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #ffb74d; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home (External CSS)</a>
+        <a href="internal.html">Adoption Process (Internal CSS)</a>
+        <a href="inline.html">Whiskers Profile (Inline CSS)</a>
+    </nav>
+    <header>
+        <h1>The Cat's Meow Shelter</h1>
+        <p>Giving every cat a second chance at a loving home.</p>
+    </header>
+
+    <div class="container">
+        <section class="info-block" id="location">
+            <h2>Location & Hours</h2>
+            <p><strong>Address:</strong> 123 Paws Lane, Cat City</p>
+            <p><strong>Open:</strong> Mon-Sat, 10 AM - 4 PM</p>
+        </section>
+
+        <section class="info-block">
+            <h2>Support Our Mission</h2>
+            <p>Your generous donations help us provide food, medical care, and toys for our residents.</p>
+            <a href="#footer-contact" class="btn-donate">Donate Now</a> 
+        </section>
+
+        <section class="info-block contact" id="contact">
+            <h2>Get In Touch</h2>
+            <p>Phone: (555) CAT-ADPT</p>
+            <p>Email: <a href="mailto:info@catsmeow.org">info@catsmeow.org</a></p>
+        </section>
+    </div>
+
+    <footer id="footer-contact">
+        <p>&copy; 2025 The Cat's Meow Shelter</p>
+    </footer>
+
+</body>
+</html>
